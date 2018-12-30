@@ -154,11 +154,11 @@ public class Binary_Tree {
         bt.addTreeNode(7);
         bt.addTreeNode(9);
 
-        //System.out.println(bt.find(6));
+        System.out.println(bt.find(6));
 
         bt.deleteTreeNode(4);
 
-        //System.out.println(bt.find(4));
+        System.out.println(bt.find(4));
 
         bt.traversel_InOrder();
         System.out.println();
