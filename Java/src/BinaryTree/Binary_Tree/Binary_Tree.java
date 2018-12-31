@@ -15,7 +15,7 @@ public class Binary_Tree {
     }
 
     public void deleteTreeNode(int value){
-        root = delete(root,value);
+        delete(root,value);
     }
 
     public void traversel_InOrder(){
@@ -40,8 +40,8 @@ public class Binary_Tree {
 
 
         if(current == null){
-           // TreeNode treenode = new TreeNode(value);
-            return new TreeNode(value);
+          TreeNode treenode = new TreeNode(value);
+            //return new TreeNode(value);
         }
 
         if(value < current.value){
@@ -155,6 +155,8 @@ public class Binary_Tree {
         bt.addTreeNode(9);
 
         System.out.println(bt.find(6));
+
+        bt.traversel_InOrder();
 
         bt.deleteTreeNode(4);
 
