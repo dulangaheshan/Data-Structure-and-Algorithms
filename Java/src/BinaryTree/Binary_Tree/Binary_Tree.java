@@ -24,6 +24,12 @@ public class Binary_Tree {
 
     }
 
+    public void traversel_InOrdersum(){
+
+        System.out.println(traverseInOrdersum(root));
+
+    }
+
     public void traversel_PreOrder(){
 
         traversePreOrder(root);
@@ -40,8 +46,8 @@ public class Binary_Tree {
 
 
         if(current == null){
-          TreeNode treenode = new TreeNode(value);
-            //return new TreeNode(value);
+          //TreeNode treenode = new TreeNode(value);
+            return new TreeNode(value);
         }
 
         if(value < current.value){
@@ -85,6 +91,7 @@ public class Binary_Tree {
             if(current.right == null){
                 return current.left;
             }
+
             else{
                 int smallestValue = findSmallest(current.right);
                 current.value = smallestValue;
@@ -113,6 +120,17 @@ public class Binary_Tree {
             traverseInOrder(node.left);
             System.out.print(" " + node.value);
             traverseInOrder(node.right);
+        }
+    }
+
+    public int traverseInOrdersum(TreeNode node) {
+        if (node == null) {
+             return 0;}
+             else{
+
+            return node.value + traverseInOrdersum(node.left) + traverseInOrdersum(node.left);
+           // System.out.print(" " + node.value);
+            //return node.value + traverseInOrdersum(node.left);
         }
     }
 
@@ -167,6 +185,7 @@ public class Binary_Tree {
         bt.traversel_PreOrder();
         System.out.println();
         bt.traversel_PostOrder();
+        System.out.println();bt.traversel_InOrdersum();
     }
 
 }

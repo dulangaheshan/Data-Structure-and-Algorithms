@@ -4,7 +4,7 @@ public class SumOfDigits {
 
     public static void main(String[] args) {
 
-        System.out.println(sum(789544545));
+        System.out.println(sum(99));
     }
     static int sum(int num){
 

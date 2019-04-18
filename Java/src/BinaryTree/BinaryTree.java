@@ -1,7 +1,4 @@
 package BinaryTree;
-
-import com.sun.glass.ui.SystemClipboard;
-
 public class BinaryTree {
 
     public static void main(String[] args) {
