@@ -39,5 +39,16 @@ public class DFS {
         }
     }
 
+    public void dfsRecursive(Vertex vertex){
+
+        System.out.print(vertex.getName()+" ");
+
+        vertex.setVisited(true);
+        for(Vertex v : vertex.getNeighbourList()){
+            v.setVisited(true);
+            dfsRecursive(v);
+        }
+    }
+
 
 }

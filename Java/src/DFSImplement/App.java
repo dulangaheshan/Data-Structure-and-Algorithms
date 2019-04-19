@@ -28,10 +28,10 @@ public class App {
         list.add(v5);
         DFS dfs = new DFS();
 
-        dfs.dfs(list);
+        //dfs.dfs(list);
 
       //  dfs.dfsWithStack(v1);
 
-
+      dfs.dfsRecursive(v1);
     }
 }
