@@ -10,7 +10,7 @@ public class DFS {
         this.topologicalOrderstack = new Stack<>();
     }
 
-    public void DfsRecursive(Vertex vertex){
+    public void DfsRecursive(Vertex vertex){ 
 
         vertex.setVisited(true);
         for(Vertex v : vertex.getNeighboursLits()){
